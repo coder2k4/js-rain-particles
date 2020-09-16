@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Particles rain</title>
+</head>
+<body>
+
+
+
+<!--<div class="droplet">💧</div>-->
+
+
+<script src="main.js"></script>
+
+<style>
+
+    body {
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        background: #000428;  /* fallback for old browsers */
+        background: linear-gradient(to top, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .droplet {
+        animation: rain 2s ease-in;
+        position: absolute;
+        top: -3vh
+    }
+
+    @keyframes rain {
+        0% {
+            top: -1vh;
+        }
+        100% {
+            top: 101vh;
+        }
+
+    }
+
+
+</style>
+
+</body>
+
+</html>
